@@ -1,0 +1,89 @@
+.header {
+  background: #000000;
+}
+
+.header .header_wrap {
+  max-width: 1200px;
+  padding: 0 15px;
+  height: 65px;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .gnb > ul {
+  display: flex;
+  color: #ffffff;
+  gap: 30px;
+}
+
+.header h1 img {
+  width: 120px;
+}
+
+.header .search img {
+  width: 22px;
+}
+
+/* //header */
+
+.main_visual .itm {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main_visual .itm01 {
+  background: url(../img/main01.avif) no-repeat center center/cover;
+}
+
+.main_visual .itm02 {
+  background: url(../img/main03.avif) no-repeat center center/cover;
+}
+
+.main_visual .itm03 {
+  background: url(../img/main02.avif) no-repeat center center/cover;
+}
+
+.main_visual .itm .slogan {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.main_visual .itm .slogan strong {
+  display: block;
+  padding-top: 170px;
+  color: #f2f2f2;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+}
+
+.main_visual .itm .slogan span {
+  display: block;
+  color: #f2f2f2;
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.main_visual .itm .slogan span:nth-child(2) {
+  line-height: 26px;
+}
+
+.main_visual .slogan .btn {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.main_visual .slogan .btn:hover {
+  background: #cccbcb;
+  transition: 0.5s;
+}
