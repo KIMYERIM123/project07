@@ -1,5 +1,11 @@
 .header {
   background: #000000;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .header .header_wrap {
@@ -13,7 +19,7 @@
   justify-content: space-between;
 }
 
-.header .gnb>ul {
+.header .gnb > ul {
   display: flex;
   color: #ffffff;
   gap: 30px;
@@ -29,7 +35,8 @@
 
 .main_visual .itm {
   width: 100%;
-  height: calc(100vh - 60px)
+  /* height: calc(100vh - 60px); */
+  height: 100vh;
 }
 
 .main_visual .itm01 {
@@ -117,7 +124,6 @@
   transform: translate(-50%, 0);
 
   width: 660px;
-
 }
 
 .main_visual .menu li {
@@ -125,7 +131,7 @@
   text-align: center;
   margin-right: 20px;
   color: #aaaaaa;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 500;
   margin-bottom: 20px;
   padding: 0 0 10px 0;
@@ -150,8 +156,13 @@
   content: "";
   width: 0;
   height: 2px;
-  background: repeating-linear-gradient(-45deg, #aaa, #aaa 3px, #fff 3px, #fff 6px);
-  ;
+  background: repeating-linear-gradient(
+    -45deg,
+    #aaa,
+    #aaa 3px,
+    #fff 3px,
+    #fff 6px
+  );
   position: absolute;
   bottom: 0;
   left: 0;
@@ -163,3 +174,62 @@
 }
 
 /* //main_visual */
+
+.main_content {
+  padding: 150px 0;
+}
+
+.main_content .content_tit {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #000000;
+
+  max-width: 1200px;
+  margin: 0 auto 70px auto;
+  padding: 0 15px;
+
+  text-align: center;
+}
+
+.main_content .con_slide .slick-slide img {
+  display: block;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.main_content .con_slide .con_txt {
+  display: none;
+  font-family: "Poppins";
+}
+
+.main_content .con_slide .slick-current .con_txt {
+  display: block;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 40px auto 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.main_content .con_slide .slick-current .con_txt span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.main_content .con_slide .slick-current .con_txt strong {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.main_content .con_slide .slick-current .con_txt p {
+  padding: 25px 0 0 0;
+  font-size: 18px;
+  line-height: 23px;
+}
