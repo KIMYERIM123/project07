@@ -5,7 +5,7 @@
 .header .header_wrap {
   max-width: 1200px;
   padding: 0 15px;
-  height: 65px;
+  height: 60px;
 
   margin: 0 auto;
   display: flex;
@@ -13,14 +13,12 @@
   justify-content: space-between;
 }
 
-.header .gnb > ul {
+.header .gnb>ul {
   display: flex;
   color: #ffffff;
   gap: 30px;
-}
-
-.header h1 img {
-  width: 120px;
+  font-size: 15px;
+  font-family: "Poppins";
 }
 
 .header .search img {
@@ -31,8 +29,7 @@
 
 .main_visual .itm {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: calc(100vh - 60px)
 }
 
 .main_visual .itm01 {
@@ -40,11 +37,11 @@
 }
 
 .main_visual .itm02 {
-  background: url(../img/main03.avif) no-repeat center center/cover;
+  background: url(../img/main02.avif) no-repeat center center/cover;
 }
 
 .main_visual .itm03 {
-  background: url(../img/main02.avif) no-repeat center center/cover;
+  background: url(../img/main03.avif) no-repeat center center/cover;
 }
 
 .main_visual .itm .slogan {
@@ -61,18 +58,37 @@
   font-size: 80px;
   font-weight: 600;
   font-family: "Poppins";
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .main_visual .itm .slogan span {
   display: block;
   color: #f2f2f2;
-  font-size: 22px;
-  margin-bottom: 60px;
+  font-size: 20px;
+  font-family: "Poppins";
+  margin-bottom: 40px;
 }
 
 .main_visual .itm .slogan span:nth-child(2) {
   line-height: 26px;
+}
+
+.main_visual .itm03 .slogan p:first-child {
+  padding-top: 170px;
+  color: #f2f2f2;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Poppins";
+
+  /* margin-bottom: 10px; */
+}
+
+.main_visual .itm03 .slogan p:nth-child(2) {
+  color: #f2f2f2;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Poppins";
+  margin-bottom: 40px;
 }
 
 .main_visual .slogan .btn {
@@ -87,3 +103,63 @@
   background: #cccbcb;
   transition: 0.5s;
 }
+
+.main_visual {
+  position: relative;
+}
+
+.main_visual .menu {
+  display: flex;
+  color: #f2f2f2;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 660px;
+
+}
+
+.main_visual .menu li {
+  width: 200px;
+  text-align: center;
+  margin-right: 20px;
+  color: #aaaaaa;
+  font-family: 'Poppins';
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+
+.main_visual .menu li.on a {
+  color: #f2f2f2;
+}
+
+.main_visual .menu li::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #aaaaaa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main_visual .menu li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: repeating-linear-gradient(-45deg, #aaa, #aaa 3px, #fff 3px, #fff 6px);
+  ;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main_visual .menu li.on::after {
+  width: 100%;
+  transition: 3.5s;
+}
+
+/* //main_visual */
