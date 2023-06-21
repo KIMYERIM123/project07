@@ -32,9 +32,24 @@ $(function () {
   // });
 
   $(".con_slide").slick({
-    // dots: true,
+    dots: true,
     arrows: false,
     centerMode: true,
     centerPadding: "300px",
   });
+
+  $(".main_content .arrows .left").on("click", function () {
+    $(".con_slide").slick("slickPrev");
+  });
+  $(".main_content .arrows .right").on("click", function () {
+    $(".con_slide").slick("slickNext");
+  });
+
+
+  $('.main_discover .tab_menu li').on('click', function () {
+    const idx = $(this).index();
+    $('.main_discover .tab_con li').eq(idx).addClass('on').siblings().removeClass('on')
+    $(this).addClass("on").siblings().removeClass("on");
+  })
+
 });
