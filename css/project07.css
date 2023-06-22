@@ -179,7 +179,7 @@
   padding: 130px 0;
 }
 
-.main_content .content_tit {
+.main_content h2 {
   font-size: 40px;
   font-weight: 600;
   font-family: "Poppins";
@@ -319,7 +319,7 @@
   background: #000000;
 }
 
-.main_discover .dis_tit {
+.main_discover h2 {
   font-size: 40px;
   font-weight: 600;
   font-family: "Poppins";
@@ -347,20 +347,24 @@
   font-size: 18px;
   font-weight: 500;
   color: #757575;
+  font-family: "Poppins";
   display: inline-block;
   padding: 0 15px;
   border-right: 1px solid #3a3838;
 
   cursor: pointer;
 
-  position: relative;
 }
 
 .main_discover .top>ul>li.on {
   color: #fff;
 }
 
-.main_discover .top>ul>li::before {
+.main_discover .top>ul>li>a {
+  position: relative;
+}
+
+.main_discover .top>ul>li>a::before {
   content: "";
   width: 0;
   height: 1px;
@@ -371,7 +375,7 @@
   left: 0;
 }
 
-.main_discover .top>ul>li.on::before {
+.main_discover .top>ul>li.on a::before {
   width: 100%;
   transition: 0.5s;
 }
@@ -420,4 +424,117 @@
 .main_discover .tab_con li.on .dis_inner .right {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.main_discover .bottom .right {
+  font-family: "Poppins";
+}
+
+.main_discover .bottom .right span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.main_discover .bottom .right .rit_tt {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  color: #fff;
+  margin: 0 0 30px 0;
+}
+
+.main_discover .bottom .right p {
+  color: #fff;
+  line-height: 21px;
+  margin: 0 0 50px 0;
+}
+
+.main_discover .bottom .right .btn {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.main_discover .bottom .right .btn:hover {
+  background: #cccbcb;
+  transition: 0.5s;
+}
+
+/* //main_discover */
+
+.main_product {
+  padding: 130px 0;
+}
+
+.main_product .pro_inner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-column-gap: 20px;
+  grid-row-gap: 20px
+}
+
+.main_product .pro_inner .itm img {
+  border-radius: 40px;
+}
+
+.main_product .itm01 {
+  margin: auto 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #000000;
+}
+
+.main_product .itm {
+  position: relative;
+
+}
+
+.main_product .itm .pro_slogan {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 30px 40px;
+  line-height: 30px;
+}
+
+.main_product .itm .pro_slogan span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.main_product .itm .pro_slogan p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+
+
+.main_product .itm02 .pro_slogan p:last-child {
+  text-shadow: 1px 1px #444;
+}
+
+.main_product .itm img {
+  transition: 0.5s;
+}
+
+.main_product .itm figure:hover img {
+  transform: scale(1.1);
+}
+
+.main_product .itm figure {
+  overflow: hidden;
+  border-radius: 40px;
 }
