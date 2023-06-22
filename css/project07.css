@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 
-.header .gnb>ul {
+.header .gnb > ul {
   display: flex;
   color: #ffffff;
   gap: 30px;
@@ -158,11 +158,13 @@
   content: "";
   width: 0;
   height: 2px;
-  background: repeating-linear-gradient(-45deg,
-      #aaa,
-      #aaa 3px,
-      #fff 3px,
-      #fff 6px);
+  background: repeating-linear-gradient(
+    -45deg,
+    #aaa,
+    #aaa 3px,
+    #fff 3px,
+    #fff 6px
+  );
   position: absolute;
   bottom: 0;
   left: 0;
@@ -245,13 +247,18 @@
   font-size: 16px;
   background: #000000;
   color: #fff;
-  padding: 10px 25px;
+  padding: 15px 30px;
   display: inline-block;
   border-radius: 5px;
 
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: 0.5s;
+}
+
+.main_content .con_slide .slick-current .con_txt .btn:hover {
+  background: #333;
 }
 
 .main_content .con_inner {
@@ -338,12 +345,12 @@
   margin: 0 auto 70px auto;
 }
 
-.main_discover .top>ul {
+.main_discover .top > ul {
   display: flex;
   justify-content: center;
 }
 
-.main_discover .top>ul>li {
+.main_discover .top > ul > li {
   font-size: 18px;
   font-weight: 500;
   color: #757575;
@@ -353,18 +360,17 @@
   border-right: 1px solid #3a3838;
 
   cursor: pointer;
-
 }
 
-.main_discover .top>ul>li.on {
+.main_discover .top > ul > li.on {
   color: #fff;
 }
 
-.main_discover .top>ul>li>a {
+.main_discover .top > ul > li > a {
   position: relative;
 }
 
-.main_discover .top>ul>li>a::before {
+.main_discover .top > ul > li > a::before {
   content: "";
   width: 0;
   height: 1px;
@@ -375,7 +381,7 @@
   left: 0;
 }
 
-.main_discover .top>ul>li.on a::before {
+.main_discover .top > ul > li.on a::before {
   width: 100%;
   transition: 0.5s;
 }
@@ -454,7 +460,7 @@
 
 .main_discover .bottom .right .btn {
   background: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 5px;
 }
 
@@ -466,7 +472,7 @@
 /* //main_discover */
 
 .main_product {
-  padding: 130px 0;
+  padding: 130px 0 160px 0;
 }
 
 .main_product .pro_inner {
@@ -478,7 +484,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 
   grid-column-gap: 20px;
-  grid-row-gap: 20px
+  grid-row-gap: 20px;
 }
 
 .main_product .pro_inner .itm img {
@@ -496,7 +502,6 @@
 
 .main_product .itm {
   position: relative;
-
 }
 
 .main_product .itm .pro_slogan {
@@ -506,6 +511,7 @@
 
   padding: 30px 40px;
   line-height: 30px;
+  font-family: "Poppins";
 }
 
 .main_product .itm .pro_slogan span {
@@ -519,8 +525,6 @@
   font-weight: 700;
   line-height: 35px;
 }
-
-
 
 .main_product .itm02 .pro_slogan p:last-child {
   text-shadow: 1px 1px #444;
@@ -537,4 +541,99 @@
 .main_product .itm figure {
   overflow: hidden;
   border-radius: 40px;
+}
+
+/* //main_product */
+
+.main_banner {
+  background: url(../img/pixel-technology_kv_pc_3.avif) no-repeat fixed center
+    center/cover;
+  height: 400px;
+  position: relative;
+}
+
+.main_banner .banner_tit {
+  font-family: "Poppins";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main_banner .banner_tit span {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 2px #444;
+
+  margin-bottom: 10px;
+}
+
+.main_banner .banner_tit p {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #fff;
+  margin-bottom: 35px;
+  text-shadow: 3px 3px 3px #111;
+}
+
+.main_banner .banner_tit .btn {
+  display: inline-block;
+  background: #dfdddd;
+  padding: 20px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #222;
+}
+
+.main_banner .banner_tit .btn:hover {
+  background: #cccbcb;
+  transition: 0.5s;
+}
+
+/* //main_banner */
+
+.footer {
+  padding: 130px 0 40px 0;
+}
+
+.footer .footer_wrap {
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.footer .top {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  padding: 0 15px 30px 0;
+  margin: 0 auto;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.footer .top > ul > li:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer .top a {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.footer .bottom {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer .bottom address {
+  font-style: normal;
+  font-size: 14px;
 }
