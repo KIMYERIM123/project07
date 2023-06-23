@@ -13,7 +13,7 @@
 .header .header_wrap {
   max-width: 1200px;
   padding: 0 15px;
-  height: 60px;
+  height: 65px;
 
   margin: 0 auto;
   display: flex;
@@ -21,7 +21,11 @@
   justify-content: space-between;
 }
 
-.header .gnb > ul {
+.header h1 img {
+  width: 115px;
+}
+
+.header .gnb>ul {
   display: flex;
   color: #ffffff;
   gap: 30px;
@@ -158,13 +162,11 @@
   content: "";
   width: 0;
   height: 2px;
-  background: repeating-linear-gradient(
-    -45deg,
-    #aaa,
-    #aaa 3px,
-    #fff 3px,
-    #fff 6px
-  );
+  background: repeating-linear-gradient(-45deg,
+      #aaa,
+      #aaa 3px,
+      #fff 3px,
+      #fff 6px);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -345,12 +347,12 @@
   margin: 0 auto 70px auto;
 }
 
-.main_discover .top > ul {
+.main_discover .top>ul {
   display: flex;
   justify-content: center;
 }
 
-.main_discover .top > ul > li {
+.main_discover .top>ul>li {
   font-size: 18px;
   font-weight: 500;
   color: #757575;
@@ -362,15 +364,15 @@
   cursor: pointer;
 }
 
-.main_discover .top > ul > li.on {
+.main_discover .top>ul>li.on {
   color: #fff;
 }
 
-.main_discover .top > ul > li > a {
+.main_discover .top>ul>li>a {
   position: relative;
 }
 
-.main_discover .top > ul > li > a::before {
+.main_discover .top>ul>li>a::before {
   content: "";
   width: 0;
   height: 1px;
@@ -381,7 +383,7 @@
   left: 0;
 }
 
-.main_discover .top > ul > li.on a::before {
+.main_discover .top>ul>li.on a::before {
   width: 100%;
   transition: 0.5s;
 }
@@ -491,6 +493,11 @@
   border-radius: 40px;
 }
 
+.main_product .itm05 img {
+  width: 376.66px;
+  height: 376.66px;
+}
+
 .main_product .itm01 {
   margin: auto 0;
   text-align: center;
@@ -546,8 +553,7 @@
 /* //main_product */
 
 .main_banner {
-  background: url(../img/pixel-technology_kv_pc_3.avif) no-repeat fixed center
-    center/cover;
+  background: url(../img/pixel-technology_kv_pc_3.avif) no-repeat fixed center center/cover;
   height: 400px;
   position: relative;
 }
@@ -617,7 +623,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-.footer .top > ul > li:first-child {
+.footer .top>ul>li:first-child {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
