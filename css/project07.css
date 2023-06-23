@@ -589,7 +589,7 @@
 .main_banner .banner_tit .btn {
   display: inline-block;
   background: #dfdddd;
-  padding: 20px 30px;
+  padding: 15px 30px;
   font-size: 18px;
   border-radius: 5px;
   color: #222;
@@ -642,4 +642,29 @@
 .footer .bottom address {
   font-style: normal;
   font-size: 14px;
+}
+
+/* //footer */
+
+.to_top i {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px 10px;
+  font-size: 20px;
+  box-shadow: 2px 2px 2px #999;
+
+}
+
+.to_top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.to_top.on {
+  opacity: 1;
 }
